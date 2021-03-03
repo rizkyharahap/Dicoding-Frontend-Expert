@@ -1,0 +1,9 @@
+@import '../../../themes';
+
+.brand {
+  @include flex;
+
+  img {
+    margin-right: $md;
+  }
+}

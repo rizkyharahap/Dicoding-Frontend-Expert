@@ -1,0 +1,55 @@
+$heroes-img: url('../public/assets/images/heros/hero-image_4.jpg');
+
+.hero {
+  background-image: $heroes-img;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: $color-background;
+  min-height: 200px;
+  border-radius: $medium;
+
+  h2 {
+    font-size: 2rem;
+    margin-top: $small;
+    margin-bottom: $small;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: $medium;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 350px;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.btn-to-restaurant {
+  background-color: $color-primary;
+  color: $color-background;
+  padding: 12px $medium;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.05rem;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}

@@ -1,0 +1,55 @@
+.filter {
+  background-color: $color-accent;
+  color: $color-secondary;
+  border-radius: $medium;
+  padding: $medium $large;
+  margin-top: $large;
+  text-align: center;
+
+  .filter-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: $medium;
+    padding-bottom: $medium;
+  }
+
+  .form-filter {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .input-container {
+      width: 100%;
+      margin-bottom: $small;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      .input-filter {
+        width: 80%;
+        border: 2px solid $color-secondary;
+        border-top-left-radius: $small;
+        border-bottom-left-radius: $small;
+        padding: 10px;
+        font-size: 1.05rem;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .input-button {
+        border-top-right-radius: $small;
+        border-bottom-right-radius: $small;
+        width: 20%;
+        background-color: $color-secondary;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../../themes';
+
+.button {
+  background-color: $color-primary;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #801313;
+}

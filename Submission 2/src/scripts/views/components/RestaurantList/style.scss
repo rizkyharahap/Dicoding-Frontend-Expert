@@ -1,0 +1,23 @@
+@import '../../../themes';
+
+.restaurant-list {
+  @include container;
+  padding-top: $xxl;
+  padding-bottom: $xxl;
+
+  h3 {
+    margin-top: $xl;
+    margin-bottom: $xl;
+    font-size: 1.3rem;
+  }
+}
+
+.restaurant-grid {
+  display: grid;
+  gap: $xxl;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  @media (min-width: $mobile) {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  }
+}

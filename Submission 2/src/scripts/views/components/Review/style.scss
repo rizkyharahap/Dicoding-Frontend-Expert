@@ -1,0 +1,52 @@
+@import '../../../themes';
+
+.detail-review {
+  padding-top: $xxl;
+  padding-bottom: $xxl;
+  background-color: white;
+  border-top: 1px solid $color-border;
+
+  .review-container {
+    @include container;
+
+    .form-review {
+      @include flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: $xl $lg;
+
+      textarea {
+        margin-top: $lg;
+        width: 100%;
+        padding: $lg $sm;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: $sm;
+        font-size: 1.05rem;
+      }
+
+      button-element {
+        margin-top: $lg;
+      }
+    }
+
+    .card-review {
+      article {
+        border-bottom: 1px solid $color-border;
+        padding: $xl $lg;
+
+        header {
+          @include flex;
+
+          span {
+            color: $color-subtitle-hover;
+            margin-left: $md;
+          }
+        }
+
+        p {
+          margin-top: $md;
+        }
+      }
+    }
+  }
+}

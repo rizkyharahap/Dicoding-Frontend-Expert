@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid #f1f1f1;
+  justify-content: center;
+  background-color: $color-secondary;
+  color: $color-background;
+  padding: $medium;
+  text-align: center;
+
+  .footer-icon {
+    color: #cd0a0a;
+    -webkit-text-stroke: 0.3px $color-background;
+    font-size: 1.2rem;
+  }
+}

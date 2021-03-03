@@ -1,0 +1,17 @@
+@import '../../../themes';
+
+footer {
+  border-top: 1px solid #f1f1f1;
+  justify-content: center;
+  background-color: $color-secondary;
+  color: white;
+  padding: $xl;
+  text-align: center;
+  font-size: .85rem;
+
+  .footer-icon {
+    color: $color-primary;
+    -webkit-text-stroke: 0.3px $color-background;
+    font-size: 1.2rem;
+  }
+}

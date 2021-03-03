@@ -1,0 +1,29 @@
+@import '../../../themes/';
+
+.app-bar {
+  border-bottom: 1px solid $color-border;
+  background-color: white;
+
+  .app-bar__container {
+    @include flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet) {
+      @include container;
+    }
+  }
+
+  button-icon {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.link {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}

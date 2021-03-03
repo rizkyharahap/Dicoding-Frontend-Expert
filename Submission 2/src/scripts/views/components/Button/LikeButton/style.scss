@@ -1,0 +1,17 @@
+@import '../../../../themes';
+
+.btn-like {
+  position: fixed;
+  bottom: $xxl;
+  right: $xl;
+
+  .btn-icon {
+    color: white;
+    background-color: $color-primary;
+    border-radius: 100%;
+
+    @media (min-width: $tablet) {
+    border-radius: 100px;
+    }
+  }
+}

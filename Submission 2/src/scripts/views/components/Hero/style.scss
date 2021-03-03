@@ -1,0 +1,44 @@
+@import '../../../themes';
+
+.hero-content {
+  @include flex;
+  @include container-fluid;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: $color-background;
+  height: 100%;
+
+  h2 {
+    font-size: 2.15rem;
+    margin-bottom: $lg;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: $xl;
+  }
+
+  @media (min-width: $mobile) {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  @media (min-width: $tablet) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+

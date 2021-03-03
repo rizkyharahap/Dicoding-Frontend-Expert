@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  min-width: 44px;
+  padding: 12px;
+  font-size: 1.05rem;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    width: 750px;
+
+    @media (min-width: 992px) {
+      width: 970px;
+
+      @media (min-width: 1200px) {
+        width: 1170px;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.brand {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.link {
+  margin: 0;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+.nav-link {
+  list-style: none;
+  margin: 0;
+  font-size: 1.1rem;
+
+  li a {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    li a {
+      display: block;
+    }
+  }
+}
+
+main {
+  transition: background-color 0.5s;
+  min-height: calc(100vh - 68px);
+}

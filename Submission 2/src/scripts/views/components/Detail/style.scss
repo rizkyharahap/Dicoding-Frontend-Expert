@@ -1,0 +1,104 @@
+@import '../../../themes';
+
+.detail-header {
+  padding-top: $xxl;
+  padding-bottom: $xxl;
+  background-color: white;
+
+  header {
+    @include flex;
+    @include container;
+
+    .rating {
+      @include flex;
+
+      margin-left: $xl;
+      span {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-left: $sm;
+      }
+    }
+  }
+
+  address {
+    @include flex;
+    @include container;
+    margin-top: $xl;
+    font-style: normal;
+    color: $color-subtitle-hover;
+  }
+
+  p {
+    @include container;
+    margin-top: $lg;
+  }
+}
+
+.detail-category {
+  background-color: white;
+  padding-top: $lg;
+  padding-bottom: $sm;
+  border-bottom: 1px solid $color-border;
+  border-top: 1px solid $color-border;
+
+  .category-container {
+    @include container;
+    @include flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 $sm $md $sm;
+      padding: $md $xl;
+      color: white;
+      background-color: $color-primary;
+      border-radius: 100px;
+    }
+  }
+}
+
+.detail-menu {
+  @include container;
+  padding-top: $xxl;
+  padding-bottom: $xxl;
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .menu-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: $xl;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+.card-menu {
+  padding: $xl $lg;
+  margin-top: $xl;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 0.3s;
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .menu-item {
+    margin-top: $lg;
+
+    li {
+      display: block;
+      margin-bottom: $sm;
+    }
+  }
+}

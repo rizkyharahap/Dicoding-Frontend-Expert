@@ -1,0 +1,67 @@
+@import '../../../themes';
+
+app-drawer {
+  position: fixed;
+  left: -200px;
+  top: 65px;
+  transition: left 0.3s;
+  z-index: 20;
+  min-width: 200px;
+
+  @media (min-width: $tablet) {
+    position: inherit;
+  }
+}
+
+.app-drawer__open {
+  left: 0px;
+}
+
+.nav-link {
+  height: calc(100vh - 68px);
+  background-color: white;
+
+  ul {
+    list-style: none;
+
+    li a {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: $xl;
+      border-bottom: 1px solid $color-border;
+      font-weight: 500;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: auto;
+
+    ul {
+      display: flex;
+      li a {
+        padding: $lg;
+        width: auto;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.bg-drawer {
+  display: none;
+}
+
+.bg-drawer__open {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: calc(100vh - 65px);
+  background-color: rgba(0, 0, 0, 0.7);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

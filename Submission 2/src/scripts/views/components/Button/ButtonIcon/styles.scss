@@ -1,0 +1,28 @@
+@import '../../../../themes';
+
+.btn-icon {
+  @include flex;
+  background-color: transparent;
+  color: $color-subtitle;
+  padding: $lg;
+
+  &:hover {
+    color: $color-subtitle-hover;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .label {
+    display: none;
+    font-size: 1rem;
+    margin-left: $md;
+  }
+
+  @media (min-width: $tablet) {
+    .label {
+      display: block;
+    }
+  }
+}

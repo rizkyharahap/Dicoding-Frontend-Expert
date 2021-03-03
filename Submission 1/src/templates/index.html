@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Foodterest ini berisi daftar restoran favorite"
+    />
+
+    <link rel="icon" href="./assets/icons/logo.png" />
+    <title>Foodterest</title>
+  </head>
+
+  <body>
+    <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+
+    <header
+      title="Navigation Bar Foodterest"
+      is="navigation-component"
+    ></header>
+
+    <app-drawer></app-drawer>
+
+    <section class="hero" is="hero-banner"></section>
+
+    <main class="container" id="mainContent">
+      <section class="filter" is="filter-restaurant"></section>
+
+      <section
+        id="restaurant-list"
+        class="restaurant-list"
+        is="restaurant-list"
+      ></section>
+    </main>
+
+    <footer class="footer" is="footer-component"></footer>
+  </body>
+</html>

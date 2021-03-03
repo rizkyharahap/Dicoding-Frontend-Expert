@@ -1,0 +1,31 @@
+@mixin container {
+  padding-right: $lg;
+  padding-left: $lg;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    width: 750px;
+
+    @media (min-width: $laptop) {
+      width: 970px;
+
+      @media (min-width: $desktop) {
+        width: 1170px;
+      }
+    }
+  }
+}
+
+@mixin container-fluid {
+  padding-right: $lg;
+  padding-left: $lg;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

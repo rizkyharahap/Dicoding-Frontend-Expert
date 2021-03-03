@@ -1,0 +1,60 @@
+@import '../themes';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+main {
+  min-height: calc(100vh - 65px - 55.4px);
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  min-width: 44px;
+  padding: $lg;
+  font-size: 1rem;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: $sm;
+  padding: $md $lg;
+  border: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: $color-primary;
+  color: $color-background;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

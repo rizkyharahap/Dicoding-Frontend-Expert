@@ -1,0 +1,48 @@
+header {
+  background-color: $color-background;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.toogle-restaurant {
+  background-color: transparent ;
+  width: 44px;
+  height: 44px;
+  justify-content: flex-end;
+
+  svg {
+    path {
+      fill: $color-subtitle;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $color-subtitle-hover;
+      }
+    }
+  }
+}
+
+.close-restaurant {
+  display: none;
+}
+
+.nav-restaurant {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hidden {
+  display: none;
+}
